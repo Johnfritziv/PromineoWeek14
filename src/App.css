@@ -1,0 +1,104 @@
+/* General body styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe9bf;
+  color: #333;
+}
+
+/* Main App container */
+.App {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* Movie list styling */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Individual movie card styling */
+.movie {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Moves the card up a little bit when you hover over it for some feedback to the user */
+.movie:hover {
+  transform: translateY(-5px);
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Stars rating styling, spacing out the stars and correcting color */
+.stars {
+  color: orange;
+  padding: 10px 0;
+}
+
+.stars span {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Review list within movie card */
+.review-list {
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+/* Individual review styling */
+.review {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 10px;
+}
+
+/* Review form styling */
+.review-form {
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.review-input {
+  width: fill;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #004494;
+}
